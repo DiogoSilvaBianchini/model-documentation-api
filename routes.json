@@ -1,0 +1,49 @@
+{
+    "routes": {
+        "products": {
+            "get": [
+                {
+                    "title": "Pegar todos os produtos",
+                    "url": "http://localhost:8082/products/",
+                    "metodo": "GET"
+                },
+                {
+                    "title": "Solicitar produtos por categoria",
+                    "url": "http://localhost:8082/products/category/<b>Categoria</b>",
+                    "metodo": "GET"
+                },
+                {
+                    "title": "Solicitar produtos por ID",
+                    "url": "http://localhost:8082/products/<b>ID</b>",
+                    "metodo": "GET"
+                },
+                {
+                    "title": "Solicitar produtos por autor",
+                    "url": "http://localhost:8082/author/<b>NomeDoAutor</b>",
+                    "metodo": "GET"
+                }
+            ],
+            "post": [
+                {
+                    "title": "Registrar novo produto",
+                    "url": "http://localhost:8082/products/<b>ID</b>",
+                    "metodo": "POST"
+                }
+            ],
+            "put": [
+                {
+                    "title": "Atualizar produto",
+                    "url": "http://localhost:8082/products/<b>IDdoProduto</b>",
+                    "metodo": "PUT"
+                }
+            ],
+            "delete": [
+                {
+                    "title": "Remover produto",
+                    "url": "http://localhost:8082/products/<b>IDdoProduto</b>",
+                    "metodo": "DELETE"
+                }
+            ]
+        }
+    }
+} 

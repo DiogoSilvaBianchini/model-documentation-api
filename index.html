@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API - REST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="container_initial">
+            <h1>MANUAL DA API</h1>
+            <span>REST - API</span>
+        </section>
+        <section class="cards_container">
+            <h2>SERVIÇOS DISPONIVEIS</h2>
+            <p>URL E ROTAS DISPONIVEIS</p>
+            <div class="container_cards" id="cards">
+                <button onclick="returnCards()" class="retrun-button block" id="buttonClose">X</button>
+                <div class="cards_container block" id="cardContainerDescribe">
+                </div>
+                <div class="cards">
+                    <div class="card" onclick="constuctCards('get')">
+                        <h3 class="title-card downCard">GET</h3>
+                        <div class="hover-container downCard">
+                            <h3>Solicitação</h3>
+                            <p>Solicite registros ao servidor, atraves de requisições http</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" onclick="constuctCards('post')">
+                        <h3 class="title-card downCard">POST</h3>
+                        <div class="hover-container downCard">
+                            <h3>Registro</h3>
+                            <p>Registre novos registros no banco de dados, atraves de requisições http</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="constuctCards('put')">
+                        <h3 class="title-card downCard">PUT</h3>
+                        <div class="hover-container downCard">
+                            <h3>Atualizações</h3>
+                            <p>Atualize registros do banco de dados, atraves de requisições http</p>
+                        </div>
+                    </div>
+                    <div class="card" onclick="constuctCards('delete')">
+                        <h3 class="title-card downCard">DELETE</h3>
+                        <div class="hover-container downCard">
+                            <h3>Remover</h3>
+                            <p>Remova registros do banco de dados, atraves de requisições http</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container_tec">
+            <h2>TECNOLOGIAS UTILIZADAS</h2>
+            <div class="container_boxies">
+                <div class="box">
+                    <img src="./imgs/mongoDB.png" alt="logo mongoDB">
+                    <h3>MongoDb</h3>
+                    <span>Banco de dados</span>
+                </div>
+                <div class="box">
+                    <img src="./imgs/nodeJs.png" alt="logo Nodejs">
+                    <h3>Node js</h3>
+                    <span>Tecnologia </span>
+                </div>
+                <div class="box">
+                    <img src="./imgs/javascript.png" alt="logo JavaScript">
+                    <h3>javascript</h3>
+                    <span>Linguagem de programação</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span>Created by: Diogo Bianchini</span>
+        <div class="redes">
+            <img src="./imgs/instagram.png" alt="logo intagram">
+            <img src="./imgs/github.png" alt="logo guthub">
+        </div>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>
